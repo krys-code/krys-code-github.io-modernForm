@@ -1,0 +1,218 @@
+html{
+	height:100%;
+}
+body {
+	width: 100%;
+	height:100%;
+	font-family: 'Coda', cursive;
+	background-color:#F5F5F5;
+	font-weight:700;
+	text-transform: uppercase;
+	margin: 0 auto;
+
+}
+.center {
+    margin: auto;
+    width: 75%;
+    padding: 400px 10px;
+}
+.container{
+  margin: auto;
+	width:100%;
+	padding: 0 30px;
+}
+.container-fullscreen{
+	padding-right:1px;
+	padding-left:1px;
+	margin-right:auto;
+	margin-left:auto
+}
+.masthead{
+	width:100%;
+	height:100%;
+	padding:250px 0;
+	text-align:center;
+	color:#fff;
+    background-image:url("img/man_with_watch_typing_on_mac_wood_table.jpg");
+	background-color:#F5F5F5;
+	background-repeat: no-repeat;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+}
+.masthead p{
+	color:#000;
+}
+.masthead h3{
+	color:#F5F5F5;
+}
+.masthead p span{
+	color:#ef4e2b;
+}
+.masthead a i:target{
+transition:all 1s ease;
+}
+a i{
+	color:#ef4e2b;
+
+}
+a i:hover{
+	color:#000;
+}
+a i:focus{
+
+}
+.buttons{
+	display: inline-block;
+	padding: 60px 0;
+	text-align: right;
+}
+.send-button{
+	color:#ef4e2b;
+	background: none;
+	border: none;
+  padding: 0px;
+  width: 100%;
+  text-align: right;
+	border: 0;
+}
+/* .send-button:active, .send-button:hover{
+	text-decoration: none;
+} */
+.send-button:hover{
+	color:#000;
+	padding: 0;
+}
+.questions{
+	margin-right:100px;
+}
+form{
+	width: 100%;
+	display: inline-block;
+	padding: 30px 0;
+	text-align:left;
+}
+.form-buttons{
+ background: none;
+ padding: 0px;
+ border: none;
+}
+form input[type=text]{
+	width: 100%;
+	padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+	border: none;
+	border-bottom: 3.5px solid #000;
+	background-color:#F5F5F5;
+}
+form input[type=text]::placeholder{
+	font-family: 'Fanwood Text', serif;
+	weight:200;
+	font-size: 20px;
+}
+
+input[type=text]:focus {
+	outline: none;
+	border:none;
+  border-bottom: 3.5px solid #ef4e2b;
+
+}
+input[type=text]:placeholder {
+	float:left;
+}
+
+input[type=submit] {
+  background-color: #ef4e2b;
+	padding: 12px 20px;
+	margin: 5px 0;
+}
+input[type=submit]:hover {
+    background-color: #fff;
+	color: #000;
+	border: 1px bottom #ef4e2b;
+
+}
+
+/*
+Grid Layout
+ */
+
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 0;
+	border:none;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+/*  GRID OF TWELVE  */
+.span_12_of_12 {
+	width: 100%;
+}
+
+.span_11_of_12 {
+  	width: 91.53%;
+}
+.span_10_of_12 {
+  	width: 83.06%;
+}
+
+.span_9_of_12 {
+  	width: 74.6%;
+}
+
+.span_8_of_12 {
+  	width: 66.13%;
+}
+
+.span_7_of_12 {
+  	width: 57.66%;
+}
+
+.span_6_of_12 {
+  	width: 49.2%;
+}
+
+.span_5_of_12 {
+  	width: 40.73%;
+}
+
+.span_4_of_12 {
+  	width: 32.26%;
+}
+
+.span_3_of_12 {
+  	width: 23.8%;
+}
+
+.span_2_of_12 {
+  	width: 15.33%;
+}
+
+.span_1_of_12 {
+  	width: 6.866%;
+}
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+	.col {  margin: 1% 0 1% 0%; }
+
+    .span_1_of_12, .span_2_of_12, .span_3_of_12, .span_4_of_12, .span_5_of_12, .span_6_of_12, .span_7_of_12, .span_8_of_12, .span_9_of_12, .span_10_of_12, .span_11_of_12, .span_12_of_12 {
+	width: 100%;
+	}
+}
